@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery Diorama</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f3f4f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
+    header {
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    header nav a:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Main Content */
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .spaced-paragraph {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      background: white;
+      color: #555
+    }
+
+    main section {
+      margin-bottom: 30px;
+    }
+
+    .real-life-images {
+      margin-top: 20px;
+    }
+    
+    /* Row of Images */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .image-row img {
+      width: 200px;
+      border: 2px solid #4a90e2;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Download Rows */
+    .download-row {
+      display: grid;
+      grid-template-columns: 0.5fr auto; /* Image on left, button on right */
+      align-items: center; /* Center items vertically */
+      justify-content: center; /* Center the row horizontally */
+      gap: 10px; /* Space between image and button */
+      margin-bottom: 10px; /* Space between rows */
+    }
+
+    .download-row img {
+      width: 150px;
+      border: 2px solid #4a90e2;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-row a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #4a90e2;
+      padding: 10px 15px;
+      background: #ffebcd;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .download-row a:hover {
+      background: #fad0c4;
+      color: white;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 10px 20px;
+      background: #4a90e2;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Art Gallery Diorama</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Description -->
+    <section>
+      <p>
+        This is my Art Gallery Diorama, designed in SolidWorks and brought to life as part of a creative exhibit.
+      </p>
+    </section>
+
+    <!-- Row of Assembly Images -->
+    <section class="image-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Assembly_of_Art%20Gallery_Front_View.PNG" 
+        alt="Front View"
+      />
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Assembly_of_Art%20Gallery_Left_View.PNG" 
+        alt="Left View"
+      />
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Assembly_of_Art_Gallery_Right_View.PNG" 
+        alt="Right View"
+      />
+    </section>
+
+<!-- STL File Downloads -->
+<section>
+    <p>Here are the STL files for individual components of the diorama:</p>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Bench.PNG" 
+        alt="Bench"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Bench.STL"
+        download="Bench.STL"
+      >
+        Download Bench STL
+      </a>
+    </div>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Floor.PNG" 
+        alt="Floor"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Floor.STL"
+        download="Floor.STL"
+      >
+        Download Floor STL
+      </a>
+    </div>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Floor_with_Partition.PNG" 
+        alt="Floor with Partition"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Floor_with_Partition.STL"
+        download="Floor_with_Partition.STL"
+      >
+        Download Floor with Partition STL
+      </a>
+    </div>
+
+    <div class="download-row">
+        <img 
+          src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Short_Wide_Stand.PNG" 
+          alt="Short Wide Stand"
+        />
+        <a 
+          href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Short%20Wide%20Stand.STL"
+          download="Short_Wide_Stand.STL"
+        >
+          Download Short Wide Stand STL
+        </a>
+      </div>
+  
+      <div class="download-row">
+          <img 
+            src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Long_Stand.PNG" 
+            alt="Long Stand"
+          />
+          <a 
+            href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Long_Stand.STL"
+            download="Long_Stand.STL"
+          >
+            Download Long Stand STL
+          </a>
+        </div>
+        
+        <p class="spaced-paragraph">
+            The following components are various framing elements and supports that make up the gallery's layout. Each framing piece has been carefully designed to fit perfectly into the overall diorama.
+          </p>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Framing_for_Large_Portraits.PNG" 
+        alt="Framing for Large Portraits"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Framing_for_Large_Portraits.STL"
+        download="Framing_for_Large_Portraits.STL"
+      >
+        Download Framing for Large Portraits STL
+      </a>
+    </div>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Large_Framing.PNG" 
+        alt="Large Framing"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Large_Framing.STL"
+        download="Large_Framing.STL"
+      >
+        Download Large Framing STL
+      </a>
+    </div>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Normal_Sized_Framing.PNG" 
+        alt="Normal Sized Framing"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Normal_Sized_Framing.STL"
+        download="Normal_Sized_Framing.STL"
+      >
+        Download Normal Sized Framing STL
+      </a>
+    </div>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Small_Decorative_Framing.PNG" 
+        alt="Small Decorative Framing"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Small_Decorative_Framing.STL"
+        download="Small_Decorative_Framing.STL"
+      >
+        Download Small Decorative Framing STL
+      </a>
+    </div>
+  
+    <div class="download-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/Small_Plain_Framing.PNG" 
+        alt="Small Plain Framing"
+      />
+      <a 
+        href="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/STL%20Files/Art_Gallery_2024/Small_Plain_Framing.STL"
+        download="Small_Plain_Framing.STL"
+      >
+        Download Small Plain Framing STL
+      </a>
+    </div>
+    <p class="spaced-paragraph-real-life">
+        Below are the real-life images of the diorama and its components. These showcase how the design translates into physical reality, highlighting the intricate details of the gallery.
+      </p>
+<!-- Real-Life Images -->
+<section class="real-life-images">
+
+    <!-- First Row: Single Image Centered -->
+    <div class="image-row center-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Both_Floors_Front_View.jpg" 
+        alt="Both Floors Front View"
+      />
+    </div>
+  
+    <!-- Second Row: Van Gogh Images -->
+    <div class="image-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Van_Gogh_Front_View.jpg" 
+        alt="Van Gogh Front View"
+      />
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Van_Gogh_Left_View.jpg" 
+        alt="Van Gogh Left View"
+      />
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Van_Gogh_Right_View.jpg" 
+        alt="Van Gogh Right View"
+      />
+    </div>
+  
+    <!-- Third Row: Partition Images -->
+    <div class="image-row">
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Partition_Front_View.jpg" 
+        alt="Partition Front View"
+      />
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Partition_Left_View.jpg" 
+        alt="Partition Left View"
+      />
+      <img 
+        src="https://raw.githubusercontent.com/hannahxs06/CADing-Projects/main/images/Art_Gallery_2024/real_life_images/Partition_Right_View.jpg" 
+        alt="Partition Right View"
+      />
+    </div>
+  </section> 
+
+  <footer>
+    <p>&copy; 2024 Hannah Stanley | All rights reserved</p>
+  </footer>
+</body>
+</html>
+
